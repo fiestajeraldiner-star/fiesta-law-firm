@@ -148,6 +148,8 @@
       width:100%;
       border-radius:10px;
       margin-bottom:15px;
+      height:320px;
+      object-fit:cover;
     }
 
     .consultation{
@@ -158,41 +160,23 @@
       text-align:center;
     }
 
-    form{
+    iframe{
+      width:100%;
+      height:800px;
+      border:none;
+      border-radius:10px;
       margin-top:30px;
-      display:grid;
-      gap:20px;
-      max-width:600px;
-      margin-left:auto;
-      margin-right:auto;
+      background:white;
     }
 
-    input,
-    textarea{
-      padding:15px;
-      border:none;
+    .disclaimer{
+      background:#fff3cd;
+      color:#856404;
+      padding:20px;
+      border-left:5px solid #d4af37;
+      margin-top:40px;
       border-radius:5px;
-      font-size:16px;
-    }
-
-    textarea{
-      resize:none;
-      height:150px;
-    }
-
-    button{
-      background:#d4af37;
-      color:white;
-      border:none;
-      padding:15px;
-      font-size:18px;
-      border-radius:5px;
-      cursor:pointer;
-      transition:0.3s;
-    }
-
-    button:hover{
-      background:#b89324;
+      font-size:15px;
     }
 
     footer{
@@ -238,7 +222,7 @@
       <a href="#practice">Practice Areas</a>
       <a href="#about">About</a>
       <a href="#help">Who We Help</a>
-      <a href="#attorneys">Attorneys</a>
+      <a href="#attorneys">Attorney</a>
       <a href="#consultation">Consultation</a>
     </nav>
   </header>
@@ -247,6 +231,7 @@
 
   <section class="hero" id="home">
     <div class="hero-content">
+
       <h2>Fiesta Law Firm</h2>
 
       <h3>Justice. Integrity. Results.</h3>
@@ -257,8 +242,9 @@
       </p>
 
       <a href="#consultation" class="btn">
-        Free Consultation
+        Schedule Consultation
       </a>
+
     </div>
   </section>
 
@@ -273,48 +259,48 @@
       <div class="card">
         <h3>Family Law</h3>
         <p>
-          We help clients navigate divorce, child custody,
-          support agreements, and family disputes with compassion and care.
+          Helping families resolve disputes involving custody,
+          support, and domestic legal concerns with care and professionalism.
         </p>
       </div>
 
       <div class="card">
         <h3>Criminal Defense</h3>
         <p>
-          Our attorneys provide aggressive legal defense
-          to protect your rights and ensure fair representation in court.
+          Dedicated legal defense protecting the rights
+          and freedom of individuals facing criminal charges.
         </p>
       </div>
 
       <div class="card">
         <h3>Corporate Law</h3>
         <p>
-          We assist businesses with contracts, compliance,
-          partnerships, and legal strategies for long-term success.
+          Legal guidance for startups, entrepreneurs,
+          and established businesses seeking compliance and protection.
         </p>
       </div>
 
       <div class="card">
         <h3>Personal Injury</h3>
         <p>
-          We represent victims of accidents and negligence,
-          helping clients pursue compensation and justice.
+          Fighting for fair compensation for victims
+          of negligence, accidents, and injury claims.
         </p>
       </div>
 
       <div class="card">
         <h3>Real Estate Law</h3>
         <p>
-          Our firm handles property disputes, contracts,
-          leases, and legal guidance for buyers and sellers.
+          Assistance with property transactions,
+          disputes, contracts, and ownership matters.
         </p>
       </div>
 
       <div class="card">
         <h3>Immigration Law</h3>
         <p>
-          We guide individuals and families through visa applications,
-          residency matters, and immigration processes.
+          Helping individuals and families navigate visas,
+          residency applications, and immigration procedures.
         </p>
       </div>
 
@@ -326,15 +312,13 @@
 
   <section id="about">
 
-    <h2 class="section-title">About Our Firm</h2>
+    <h2 class="section-title">About Fiesta Law Firm</h2>
 
     <div class="about-content">
 
       <p>
-        Fiesta Law Firm is committed to delivering trusted legal representation
-        with professionalism, integrity, and dedication.
-        Our mission is to provide accessible legal solutions while protecting
-        the rights and interests of every client we serve.
+        Fiesta Law Firm is committed to providing trusted legal services
+        grounded in integrity, professionalism, and dedication to justice.
       </p>
 
       <br><br>
@@ -344,9 +328,9 @@
       <br>
 
       <p>
-        Our mission is to pursue justice with honesty,
-        defend our clients with excellence,
-        and build lasting trust through exceptional legal service.
+        Our mission is to advocate for our clients with excellence,
+        uphold justice with integrity, and provide legal solutions
+        that create confidence and peace of mind.
       </p>
 
     </div>
@@ -362,107 +346,100 @@
     <div class="help-content">
 
       <p>
-        Fiesta Law Firm proudly serves individuals, families,
-        entrepreneurs, startups, corporations, and communities
-        seeking reliable legal representation.
+        We proudly serve individuals, families, entrepreneurs,
+        professionals, and businesses seeking reliable legal representation.
       </p>
 
       <br>
 
       <p>
-        Whether you are facing personal legal challenges,
-        defending your rights, or growing your business,
-        our team is ready to stand beside you every step of the way.
+        Whether you are protecting your rights,
+        defending your future, or growing your company,
+        Fiesta Law Firm is here to stand beside you.
       </p>
 
     </div>
 
   </section>
 
-  <!-- ATTORNEYS -->
+  <!-- ATTORNEY -->
 
-  <section id="attorneys">
+<section id="attorneys">
 
-    <h2 class="section-title">Attorney Bios</h2>
+  <h2 class="section-title">Attorney Bio</h2>
 
-    <div class="bio-grid">
+  <div class="bio-grid">
 
-      <div class="card bio">
+    <div class="card bio">
 
-        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80">
+      <img 
+        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+        alt="Attorney in Formal Attire">
 
-        <h3>Atty. Michael Reyes</h3>
+      <h3>Atty. Jeraldine R. Fiesta</h3>
 
-        <p>
-          Senior Litigation Attorney with over 15 years of experience
-          handling criminal defense and civil litigation cases.
-        </p>
+      <p>
+        Atty. Jeraldine R. Fiesta is a dedicated legal professional
+        committed to delivering compassionate and strategic legal representation.
+        Her practice focuses on protecting client rights while pursuing
+        justice with professionalism and integrity.
+      </p>
 
-      </div>
+      <br>
 
-      <div class="card bio">
-
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80">
-
-        <h3>Atty. Sophia Delgado</h3>
-
-        <p>
-          Corporate and business law specialist dedicated to helping
-          companies protect their interests and grow successfully.
-        </p>
-
-      </div>
-
-      <div class="card bio">
-
-        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80">
-
-        <h3>Atty. Daniel Cruz</h3>
-
-        <p>
-          Family and immigration attorney passionate about helping families
-          navigate legal challenges with confidence and care.
-        </p>
-
-      </div>
+      <p>
+        Inspired by strong and confident leadership,
+        her professional style reflects elegance,
+        confidence, and excellence in advocacy.
+      </p>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
   <!-- CONSULTATION -->
 
-  <section id="consultation">
+ <section id="consultation">
 
-    <div class="consultation">
+  <div class="consultation">
 
-      <h2 class="section-title" style="color:white;">
-        Schedule a Consultation
-      </h2>
+    <h2 class="section-title" style="color:white;">
+      Schedule a Consultation
+    </h2>
 
-      <p>
-        Contact Fiesta Law Firm today for trusted legal guidance.
-      </p>
+    <p>
+      Complete the consultation request form below.
+    </p>
 
-      <form>
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSekOC64bW13uW13DrqFo2MLEgcUxG_5bpfNznp-w5SL9nudGw/viewform?embedded=true">
+    </iframe>
 
-        <input type="text" placeholder="Your Full Name" required>
+    <br><br>
 
-        <input type="email" placeholder="Your Email Address" required>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSekOC64bW13uW13DrqFo2MLEgcUxG_5bpfNznp-w5SL9nudGw/viewform?usp=sharing"
+      target="_blank"
+      class="btn">
+      Open Consultation Form
+    </a>
 
-        <input type="tel" placeholder="Your Phone Number">
+    <div class="disclaimer">
 
-        <textarea placeholder="Describe your legal concern"></textarea>
+      <strong>Disclaimer:</strong><br><br>
 
-        <button type="submit">
-          Submit Consultation Request
-        </button>
-
-      </form>
+      This website is for educational and demonstration purposes only.
+      Attorney profiles, descriptions, and images may be fictional or illustrative.
+      Any resemblance to actual persons or legal entities is purely coincidental.
+      Information on this site does not constitute legal advice.
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
   <!-- FOOTER -->
 
